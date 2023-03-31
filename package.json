@@ -1,0 +1,23 @@
+{
+  "name": "@ykkjs/mock-http-request",
+  "version": "1.0.0",
+  "description": "Mock http request for env.development ~",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fifteen718/mock-http-request.git"
+  },
+  "keywords": [
+    "mock request",
+    "http request"
+  ],
+  "author": "yekaikai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fifteen718/mock-http-request/issues"
+  },
+  "homepage": "https://github.com/fifteen718/mock-http-request#readme"
+}
