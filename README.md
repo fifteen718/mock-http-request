@@ -24,7 +24,7 @@ pnpm add '@ykkjs/mock-http-request' -D
 
 ## Usage Example
 
-```js
+```ts
 // 导入 mockRequest
 import { mockRequest, STATUS_TYPE } from '@ykkjs/mock-http-request';
 // 导入 mock-json-data
