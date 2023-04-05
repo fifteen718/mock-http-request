@@ -52,9 +52,9 @@ const getList = function (data: GetListParam) {
 // Example - 获取详情数据
 const getkDetail = function (data: DetailParam) {
   // 1、注释生产代码
-  // return httpRequestAdapter<GetFeedbackDetailRes>({
+  // return httpRequestAdapter<GetDetailRes>({
   // 2、使用开发环境下的 mockRequest
-  return mockRequest<GetFeedbackDetailRes>({
+  return mockRequest<GetDetailRes>({
     url: baseURL + '/detail',
     method: 'get',
     mockConfig: {
@@ -66,7 +66,7 @@ const getkDetail = function (data: DetailParam) {
 
 ## Usage 说明
 
-### 简单使用
+### 快速使用
 
 1、导入 mock 方法：`mockRequest`。
 

@@ -1,6 +1,6 @@
 {
   "name": "@ykkjs/mock-http-request",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Mock http request for env.development ~",
   "main": "index.ts",
   "scripts": {
