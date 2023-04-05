@@ -51,7 +51,7 @@ const getList = function (data: GetListParam) {
 
 // Example - 获取详情数据
 const getkDetail = function (data: DetailParam) {
-  // 1、释生产代码
+  // 1、注释生产代码
   // return httpRequestAdapter<GetFeedbackDetailRes>({
   // 2、使用开发环境下的 mockRequest
   return mockRequest<GetFeedbackDetailRes>({
