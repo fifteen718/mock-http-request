@@ -1,4 +1,4 @@
-/** mock请求状态*/
+/** mock请求状态（默认 SUCCESS）*/
 export enum STATUS_TYPE {
   LOADING = 'loading',
   FAILED = 'failed',
@@ -22,21 +22,22 @@ export interface MockConfig {
 export interface MockRequestParams {
   /** mock相关的配置 */
   mockConfig: MockConfig,
-  /** 请求接口 - 与 httpRequest 保持一致即可 */
+  /** httpRequest中的请求接口 */
   url: string,
-  /** 请求方法 - 与 httpRequest 保持一致即可 */
+  /** httpRequest中的请求方法 */
   method: string,
-  /** 请求入参 - 与 httpRequest 保持一致即可 */
+  /** httpRequest中的请求入参 */
   data?: any,
-  /** 请求头 - 与 httpRequest 保持一致即可 */
+  /** httpRequest中的请求头 */
   headers?: object,
+  /** httpRequest中的其他配置项 */
   [other: string]: any,
 }
 
 /**
  * mock请求方法
- * @param MockRequestParams 大萨达
- * @returns 
+ * @param MockRequestParams 方法唯一入参
+ * @returns ResponseData 方法返回数据
  */
 export function mockRequest<ResponseData>(params: MockRequestParams) {
   // 默认请求延迟 200毫秒
